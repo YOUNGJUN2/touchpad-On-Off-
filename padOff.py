@@ -6,4 +6,4 @@ p = re.search('Touchpad\D*(\d+)', result)
 
 id = p.group(1)
 
-os.system('xinput set-int-prop %s "Device Enabled" 8 0' % (id))
+os.system('xinput set-int-prop %s "Device Enabled" 8 1' % (id))
